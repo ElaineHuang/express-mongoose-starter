@@ -1,0 +1,45 @@
+{
+  "name": "node-express-mongoose-starter",
+  "version": "1.0.1",
+  "description": "Node Express Starter",
+  "main": "server.js",
+  "scripts": {
+    "api": "bnr build:prod",
+    "server": "bnr build:dev",
+    "test": "bnr build:test"
+  },
+  "betterScripts": {
+    "build:prod": {
+      "command": "node server.js",
+      "env": {
+        "NODE_ENV": "production"
+      }
+    },
+    "build:dev": {
+      "command": "nodemon server.js",
+      "env": {
+        "NODE_ENV": "development"
+      }
+    },
+    "build:test": {
+      "command": "nodemon --exec 'mocha --recursive -R min'",
+      "env": {
+        "NODE_ENV": "test"
+      }
+    }
+  },
+  "author": "elaine",
+  "license": "ISC",
+  "devDependencies": {
+    "assert": "^1.4.1",
+    "better-npm-run": "^0.1.0",
+    "ip": "^1.1.5",
+    "mocha": "^5.0.1",
+    "nodemon": "^1.14.11"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongoose": "^5.0.7"
+  }
+}
