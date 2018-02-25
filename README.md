@@ -1,4 +1,4 @@
-# react-webpack-practice
+# Node & Mongoose Starter
 
 Node and Mongoose Basic Environment
 
